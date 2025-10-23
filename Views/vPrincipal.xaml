@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcaillaguaS3.Views.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout>
+        <Label 
+            Text="Ventanda Principal: Recivir Datos de Loggin"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <!--CREAR OBNSJETOS PARA RECIBIR DAATO-->
+        <Label x:Name="txtUsaurio"
+               FontSize="18"
+               TextColor="Blue"/>
+        <Label x:Name="txtContrasena"
+               FontSize="18"
+               TextColor="Blue"/>
+
+    </VerticalStackLayout>
+</ContentPage>
