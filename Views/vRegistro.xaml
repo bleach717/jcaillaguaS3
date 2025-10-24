@@ -3,6 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcaillaguaS3.Views.vRegistro"
              Title="vRegistro">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="AliceBlue"/>
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout
         Padding="30"
         Spacing="30">

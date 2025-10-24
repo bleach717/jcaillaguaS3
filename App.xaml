@@ -4,11 +4,11 @@
              xmlns:local="clr-namespace:jcaillaguaS3"
              x:Class="jcaillaguaS3.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+                  
+        <Style x:Key="globalButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Violet"/>
+        </Style>
+            
+       
     </Application.Resources>
 </Application>

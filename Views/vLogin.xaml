@@ -3,22 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcaillaguaS3.Views.vLogin"
              Title="vLogin">
+    <!--Estilos explisitos-->
+    <ContentPage.Resources>
+        <Style x:Key="EstiloLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="Blue" />
+        </Style>
+        
+        <Style x:Key="EstiloEntry" TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+
+    </ContentPage.Resources>
+        
     <VerticalStackLayout
         Padding="30"
         Spacing="30">
         
         <Label 
             Text="Login Semana 3!"
+            Style="{StaticResource EstiloLabel}"
             FontSize="18"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
         <Entry x:Name="txtUsuario" 
-               Placeholder="Ingresa Usuario"/>
+               Placeholder="Ingresa Usuario"
+               Style="{StaticResource EstiloEntry}"/>
+        
         <Entry x:Name="txtContrasena" 
                Placeholder="Ingresa Contraseña"
                IsPassword="True"/>
+        
         <Button x:Name="btnIniciarSesion"
+                Style="{StaticResource globalButton}"
                 Text="Iniciar Sesión" 
                 Clicked="btnIniciarSesion_Clicked"/>
         
